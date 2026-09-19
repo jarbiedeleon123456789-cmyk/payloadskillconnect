@@ -1,16 +1,21 @@
 import type { CollectionConfig } from 'payload'
+import path from 'path'
 
 export const Media: CollectionConfig = {
   slug: 'media',
   access: {
     read: () => true,
+    create: ({ req }) => Boolean(req.user),
+    update: ({ req }) => Boolean(req.user),
+    delete: ({ req }) => req.user?.role === 'admin',
   },
   fields: [
     {
       name: 'alt',
       type: 'text',
-      required: true,
     },
   ],
-  upload: true,
+  upload: {
+    staticDir: process.env.MEDIA_DIR || path.resolve(process.cwd(), 'public/media'),
+  },
 }

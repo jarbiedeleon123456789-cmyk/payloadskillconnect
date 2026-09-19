@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Who built Ayusan.PH — Jarbie Deleon</title>
+<meta name="description" content="Ayusan.PH was built by Jarbie Deleon, a BSIT student in Oriental Mindoro who has been opening up broken things for as long as he can remember.">
+<link rel="preload" href="assets/fonts/bricolage-grotesque-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/builder.css?v=1">
+</head>
+<body class="is-loading">
+
+<div class="curtain" id="curtain" aria-hidden="true">
+  <div class="curtain-count"><span id="curtainNum">0</span><i>%</i></div>
+  <div class="curtain-bar"><span id="curtainBar"></span></div>
+</div>
+<div class="cursor" id="cursor" aria-hidden="true"><span id="cursorLabel"></span></div>
+
+<header class="bar">
+  <a class="bar-brand" href="index.html" data-cursor="Home">Ayusan.PH</a>
+  <nav class="bar-links">
+    <a href="#bench" data-cursor="Go">The bench</a>
+    <a href="#person" data-cursor="Go">The person</a>
+    <a href="index.html#directory" data-cursor="Open">Directory</a>
+  </nav>
+</header>
+
+<main>
+<!-- ================= HERO: the bench ================= -->
+<section class="hero" id="top">
+  <div class="trail" id="trail" aria-hidden="true"></div>
+  <h1 class="hero-title" id="heroTitle" aria-label="Ayusin natin.">
+    <span class="hero-line" data-split>Ayusin</span>
+    <span class="hero-line" data-split>natin.</span>
+  </h1>
+  <p class="hero-note">Ayusan.PH was built by <b>Jarbie Deleon</b> — someone who opens up broken things to see why they stopped.</p>
+  <p class="hero-hint" id="heroHint"><span class="hint-hover">Move across the bench.</span><span class="hint-touch">Tap the bench.</span></p>
+  <a class="hero-down" href="#manifesto" data-cursor="Scroll" aria-label="Scroll to the story"><i></i></a>
+</section>
+
+<!-- ================= MANIFESTO: words light up as you scroll ================= -->
+<section class="manifesto" id="manifesto">
+  <p class="manifesto-text" id="manifestoText">I started with karaoke speakers and washing machines. Something stopped working, so I opened it up, found the loose part and closed it again. Ayusan.PH is that same habit pointed at a barangay: find what is broken in how neighbours find each other, and repair it.</p>
+</section>
+
+<!-- ================= BENCH: pinned horizontal scroll ================= -->
+<section class="bench" id="bench">
+  <div class="bench-pin" id="benchPin">
+    <div class="bench-head">
+      <h2>What is on the bench</h2>
+      <div class="bench-progress" aria-hidden="true"><span id="benchBar"></span></div>
+    </div>
+    <div class="bench-track" id="benchTrack">
+      <article class="drawer">
+        <div class="drawer-photo" data-cursor="Look"><img src="assets/img/bench-flatlay.jpg" alt="A wooden workbench seen from above with wrenches, screwdrivers, a hammer and a socket set laid out" loading="lazy"></div>
+        <div class="drawer-text">
+          <h3>Repair</h3>
+          <p>Karaoke speakers, washing machines, anything with a loose screw. Fixing hardware taught me to ask what fails first and why.</p>
+        </div>
+      </article>
+      <article class="drawer">
+        <div class="drawer-photo" data-cursor="Look"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=85" alt="A code editor showing HTML, CSS and JavaScript on a laptop screen" loading="lazy"></div>
+        <div class="drawer-text">
+          <h3>Code</h3>
+          <p>HTML, CSS and plain JavaScript in the browser; PHP and MySQL behind it. No framework to hide behind, so every line has to earn its place.</p>
+        </div>
+      </article>
+      <article class="drawer">
+        <div class="drawer-photo" data-cursor="Look"><img src="assets/img/toolbox-rusty.jpg" alt="An old peeling steel toolbox, open, with tools inside" loading="lazy"></div>
+        <div class="drawer-text">
+          <h3>Hardware</h3>
+          <p>ESP32 boards and sensors, for the problems that live in the real world instead of on a screen.</p>
+        </div>
+      </article>
+      <article class="drawer">
+        <div class="drawer-photo" data-cursor="Look"><img src="assets/img/hardhat-worker.jpg" alt="A worker in a yellow hard hat and safety glasses, in profile" loading="lazy"></div>
+        <div class="drawer-text">
+          <h3>People</h3>
+          <p>Residents who need a fix, workers who deserve to be found, and PESO staff who keep the record. The site is for all three.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PERSON ================= -->
+<section class="person" id="person">
+  <div class="person-photos">
+    <figure class="pp pp-a" data-reveal-clip data-cursor="Hi"><img src="assets/img/builder-dyarbe.jpg" alt="Portrait of Jarbie Deleon in a dark suit and tie" loading="lazy"></figure>
+    <figure class="pp pp-b" data-reveal-clip data-cursor="Hi"><img src="assets/img/builder-dyarbe-03.jpg" alt="Jarbie Deleon in a dark jacket and sunglasses, walking past palm trees" loading="lazy"></figure>
+    <figure class="pp pp-c" data-reveal-clip data-cursor="Hi"><img src="assets/img/builder-dyarbe-02.jpg" alt="Jarbie Deleon in a green track jacket and wraparound sunglasses" loading="lazy"></figure>
+  </div>
+  <div class="person-copy">
+    <h2 class="binary-name" data-binary-name="Jarbie Deleon" tabindex="0">Jarbie Deleon</h2>
+    <p class="person-role">Designer and developer of Ayusan.PH</p>
+    <dl class="person-facts">
+      <div><dt>Studies</dt><dd>BSIT, Mindoro State University, Calapan Campus</dd></div>
+      <div><dt>Based in</dt><dd>Oriental Mindoro</dd></div>
+      <div><dt>Built with</dt><dd>HTML, CSS, JavaScript, PHP, MySQL</dd></div>
+      <div><dt>Year</dt><dd>2026</dd></div>
+    </dl>
+    <p class="person-quote">The idea behind the site: a barangay already has the skills it needs. The hard part is finding them.</p>
+  </div>
+</section>
+
+<!-- ================= WHAT'S INSIDE ================= -->
+<section class="inside" aria-label="What is inside Ayusan.PH">
+  <div class="inside-track" id="insideTrack">
+    <span>Barangay map that works offline</span><span>Konek, the Taglish chatbot</span><span>Photo proof of finished work</span><span>Facebook sharing for workers</span><span>Tickets from pending to done</span><span>PESO verification desk</span>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="finale" id="finale">
+  <div class="hello-block">
+    <span class="hello-prompt">Wanna say hello?</span>
+    <a class="hello-email" href="mailto:hello@ayusan.ph">hello@ayusan.ph</a>
+  </div>
+  <p class="finale-line" data-cursor="Ayos">Sira? <em>Ayusan.</em></p>
+  <div class="finale-actions">
+    <a class="magnet" href="index.html" data-magnet data-cursor="Open"><span>See the directory</span></a>
+    <a class="magnet magnet-alt" href="register.html" data-magnet data-cursor="Join"><span>Create an account</span></a>
+  </div>
+  <p class="finale-foot">© 2026 Ayusan.PH · Built in Oriental Mindoro</p>
+</section>
+</main>
+
+<script src="assets/js/builder.js"></script>
+</body>
+</html>
